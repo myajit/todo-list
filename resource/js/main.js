@@ -14,6 +14,7 @@ let renderCurrentTime = setInterval(()=>{
 },1000)
 
 let registSchedule = (event) => {
+    event.preventDefault()
     let preveTodo = localStorage.getItem('todo')
     let input = document.querySelector('.inp-list').value
 
