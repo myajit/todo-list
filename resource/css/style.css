@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Pacifico&family=Permanent+Marker&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+span {
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 10%;
+    padding: 20px;     
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.wrap-todo {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.wrap-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+}
+
+.title {
+    margin-top: 30px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 246, 125);
+    /* margin: 5px; */
+    font-size: 55px;
+    /* font-weight: 100; */
+}
+
+.time {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    margin-top: -10px;
+    letter-spacing: 1px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.424);
+}
+
+.input-txt {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-txt input {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    border-bottom: 2px solid white;
+    /* border-radius: ; */
+    background-color: transparent;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.input-txt input:focus {
+    outline: none;
+}
+
+
+.input-txt input::placeholder {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.input-txt input:focus::placeholder {
+    color: transparent;
+}
+
+.todo-list-wrap {
+    margin-top: 10px;
+    width: 400px;
+    min-height: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.todo-list-wrap span {
+    font-size: 30px;
+}
+
+.todo-list-wrap p {
+    position: relative;
+    text-align: center;
+    width: 360px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border: 1px solid white;
+    /* border: 2px solid rgba(255, 255, 255, 0.466); */
+    border-radius: 8px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+.page {
+    margin-top:  -20px;
+    z-index: 1;
+    /* padding-top: -50px; */
+}
+
+.page span {
+    
+    font-size: 25px;
+}
+.page i {
+    margin: 0 10px;
+}
+
+.del { 
+    font-family: 'arial', cursive;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -14px;
+    right: -13px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 5px;
+    /* line-height: 10px; */
+    z-index: 1;
+}
+
+.del em {
+    color: rgba(0, 0, 0, 0.424);
+    font-size: 20px;
+    font-style: normal;
+    padding-bottom: 3px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 10%;
+    padding: 20px;   
+    
+}
